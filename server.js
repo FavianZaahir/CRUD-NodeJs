@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.set("view engine", "ejs");
-app.set("views", "views");
+app.set('views', path.join(__dirname, 'views'));
 
 // const mysql = require("mysql2")
 // const db = mysql.createConnection({
